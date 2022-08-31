@@ -1,0 +1,28 @@
+.listWrapper{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    .unorderedList{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding:0px;
+        width:100%;
+        .choiceItem{
+            display:flex;
+            justify-content: space-between;
+            padding:4px 4px 4px 12px;
+            min-width: 200px;
+            font-size: 1.5em;
+            border-radius: 10px;
+            margin:10px 0px;;
+        }
+        .choiceButton{
+            margin-left:10px;
+            height:40px;
+            font-size: 1em;
+            border-radius: 7px;
+            border-width: 0px;;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.appWrapper{
+    height:100%;
+    .themeWrapper{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:6px;
+        .appTitle{
+            color:#E2E2E2;
+            margin:0px;
+            font-size: 2em;
+            font-weight: bolder;
+        }
+        .themeToggle{
+            height:40px;
+            font-size:1.2em;
+            font-weight: bold;
+        }
+    }
+    .subHeader{
+        display:flex;
+        justify-content:center;
+        font-size: 2em;
+        margin:0px;
+        span{
+            white-space:nowrap;
+        }
+    }
+    .choiceWrapper{
+        flex-grow:1;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
