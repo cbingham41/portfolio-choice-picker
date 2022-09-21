@@ -7,7 +7,7 @@ const ChoiceList = ({ choiceList, deleteChoice }) => {
   return (
     <div
       className="listWrapper"
-      style={{ backgroundColor: theme.cardBackground }}
+      style={{ backgroundColor: theme.appSecondary }}
     >
       <ul className="unorderedList">
         {choiceList.map((value, index) => {

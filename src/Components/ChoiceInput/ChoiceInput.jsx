@@ -6,7 +6,7 @@ const ChoiceInput = ({ inputValue, updateInput, addChoice, isEmpty }) => {
   const theme = useContext(ThemeContext);
   return (
     <div className="inputOutsideWrapper">
-      <div className="inputinsideWrapper">
+      <form className="inputinsideWrapper">
         <input
           type="text"
           className="addChoiceText"
@@ -14,7 +14,7 @@ const ChoiceInput = ({ inputValue, updateInput, addChoice, isEmpty }) => {
           onChange={updateInput}
         />
         <input
-          type="button"
+          type="submit"
           className="addChoiceButton"
           value="Add Choice"
           onClick={addChoice}
@@ -27,7 +27,7 @@ const ChoiceInput = ({ inputValue, updateInput, addChoice, isEmpty }) => {
                 }
           }
         />
-      </div>
+      </form>
     </div>
   );
 };

@@ -1,23 +1,26 @@
 .inputOutsideWrapper{
-    width:100%;
-    display:flex;
+    width: 100%;
+    display: flex;
     justify-content: center;
+    padding-bottom:30px;
     .inputinsideWrapper{
-        display:flex;
-        height:40px;
-        width:800px;
+        display: flex;
+        height: 100%;
+        width: 80%;
+        flex-direction: column;
         .addChoiceText{
             flex-grow: 5;
             font-size: 1.5em;
-            border-top-left-radius: 10px;
             padding:10px;
+            text-align: center;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
         }
         .addChoiceButton{
             flex-grow:1;
-            font-size: 1.5em;
-            border-left-width: 0px;
-            border-bottom-width: 0xp;
-            border-top-right-radius: 10px;
+            font-size: 2em;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
         }
     }
 }

@@ -1,13 +1,16 @@
 .listWrapper{
-    display:flex;
-    justify-content: center;
-    width:100%;
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
     .unorderedList{
-        display:flex;
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding:0px;
-        width:100%;
+        padding: 0px;
+        width: 100%;
+        align-items: baseline;
+        align-content: flex-start;
+        margin:10px 0px 0px 0px;
         .choiceItem{
             display:flex;
             justify-content: space-between;
@@ -15,7 +18,7 @@
             min-width: 200px;
             font-size: 1.5em;
             border-radius: 10px;
-            margin:10px 0px;;
+            margin:10px 0px;
         }
         .choiceButton{
             margin-left:10px;

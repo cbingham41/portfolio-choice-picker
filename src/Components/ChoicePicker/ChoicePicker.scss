@@ -1,5 +1,7 @@
 .appWrapper{
     height:100%;
+    display:flex;
+    flex-direction: column;
     .themeWrapper{
         display:flex;
         justify-content: space-between;
@@ -22,8 +24,10 @@
         justify-content:center;
         font-size: 2em;
         margin:0px;
+        padding:10px;
         span{
             white-space:nowrap;
+            display: block;
         }
     }
     .choiceWrapper{

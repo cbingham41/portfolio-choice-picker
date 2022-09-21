@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect, useRef } from "react";
 import { ThemeContext } from "../../Context/ThemeContext";
 import "./PickerCarousel.scss";
 
@@ -8,14 +8,15 @@ const PickerCarousel = ({ choiceList }) => {
   const pickChoice = () => {
     setChosenItem(choiceList[Math.floor(Math.random() * choiceList.length)]);
   };
+  const oldList = useRef(choiceList);
+  useEffect(() => {
+    if (oldList.current !== choiceList) setChosenItem("");
+  }, [choiceList]);
 
   return (
     <div class="carouselWrapper">
       {chosenItem ? (
-        <div
-          className="carousel"
-          style={{ backgroundColor: theme.appBackground }}
-        >
+        <div className="carousel" style={{ color: theme.appBackground }}>
           <div className="chosenItem" style={{ color: theme.accent }}>
             {chosenItem}
           </div>

@@ -42,12 +42,10 @@ const ChoicePicker = ({
           addChoice={addChoice}
           isEmpty={isEmpty}
         />
+
+        <ChoiceList choiceList={choiceList} deleteChoice={deleteChoice} />
+
         <PickerCarousel choiceList={choiceList} />
-        {choiceList.length ? (
-          <ChoiceList choiceList={choiceList} deleteChoice={deleteChoice} />
-        ) : (
-          []
-        )}
       </section>
     </div>
   );
